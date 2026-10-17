@@ -44,7 +44,7 @@ git submodule update --remote --merge
 
 | 名称                                 | 说明                                                         |
 | ------------------------------------ | ------------------------------------------------------------ |
-| [AGENTS.codex.md](./AGENTS.codex.md) | 🚧为 GPT 6 Codex 系列模型特调的 AGENTS.md，包含绝大多数编码约束（如最小侵入原则、复杂度审查规范等等），也适用于其他 Harness |
+| [AGENTS.codex.md](./AGENTS.codex.md) | 为 GPT 6 Codex 系列模型特调的 AGENTS.md，包含绝大多数编码约束（如最小侵入原则、复杂度审查规范等等），也适用于其他 Harness |
 | [AGENTS.dsh.md](./AGENTS.dsh.md)     | 为 DeepSeek 特调的**角色扮演型** AGENTS.md，在保留前者编码约束核心的情况下，加入了大肥鱼的设定 |
 
 ## License
