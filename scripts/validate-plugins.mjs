@@ -124,7 +124,9 @@ function validateLocalReferences(text, skillDir, label) {
   for (const match of text.matchAll(/`((?:\.\.?\/)?(?:references|scripts|assets)\/[^`\s]+)`/g)) {
     targets.add(match[1].replace(/[),.;:]+$/, ''));
   }
-  for (const match of text.matchAll(/\]\((?!https?:|mailto:|#)([^)#\s]+)(?:#[^)]*)?\)/g)) {
+  // 代码段里的示例链接（如 `![台词](直链)`）不是真实引用。
+  const prose = text.replace(/`[^`\n]*`/g, '');
+  for (const match of prose.matchAll(/\]\((?!https?:|mailto:|#)([^)#\s]+)(?:#[^)]*)?\)/g)) {
     targets.add(match[1]);
   }
   for (const target of targets) {

@@ -9,7 +9,7 @@
     {
       "name": "muika-skills",
       "source": "./",
-      "description": "Muika 的 Agent Skills 集合。当前包含简体中文技术文档写作规范：按阮一峰《中文技术文档的写作规范》与微软中英文风格指南撰写、审校文档，并可按 ASD-STE100 约束英文技术写作。",
+      "description": "Muika 的 Agent Skills 集合：简体中文技术文档写作规范（阮一峰排版规则、微软风格指南、ASD-STE100），以及「蓝色大肥鱼」人格资料（外观、台词、梗图与来历）。",
       "version": "0.1.0",
       "author": {
         "name": "Moemu",
@@ -23,7 +23,9 @@
         "writing",
         "chinese",
         "localization",
-        "asd-ste100"
+        "asd-ste100",
+        "persona",
+        "deepseek"
       ],
       "homepage": "https://github.com/Moemu/skills",
       "repository": "https://github.com/Moemu/skills"
