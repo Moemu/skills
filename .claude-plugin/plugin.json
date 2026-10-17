@@ -1,0 +1,24 @@
+{
+  "name": "muika-skills",
+  "description": "Muika 的 Agent Skills 集合。当前包含简体中文技术文档写作规范：按阮一峰《中文技术文档的写作规范》与微软中英文风格指南撰写、审校文档，并可按 ASD-STE100 约束英文技术写作。",
+  "version": "0.1.0",
+  "author": {
+    "name": "Moemu",
+    "email": "i@snowy.moe",
+    "url": "https://github.com/Moemu"
+  },
+  "homepage": "https://github.com/Moemu/skills",
+  "repository": "https://github.com/Moemu/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "agent-skills",
+    "chinese",
+    "technical-writing",
+    "documentation",
+    "markdown",
+    "localization",
+    "asd-ste100",
+    "microsoft-style-guide"
+  ]
+}

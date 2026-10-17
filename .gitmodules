@@ -1,0 +1,6 @@
+[submodule "skills/chinese-tech-writing/references/sources/document-style-guide"]
+	path = skills/chinese-tech-writing/references/sources/document-style-guide
+	url = https://github.com/ruanyf/document-style-guide
+[submodule "skills/chinese-tech-writing/references/sources/microsoft-style-guide-en"]
+	path = skills/chinese-tech-writing/references/sources/microsoft-style-guide-en
+	url = https://github.com/MicrosoftDocs/microsoft-style-guide.git

@@ -1,0 +1,2 @@
+# 转换稿保留原始空白与换行，不做行尾空白检查
+skills/chinese-tech-writing/references/sources/MS-zho-chn-StyleGuide.md whitespace=-blank-at-eol
