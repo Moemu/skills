@@ -1,6 +1,6 @@
 # chinese-tech-writing
 
-按阮一峰《中文技术文档的写作规范》、微软《Chinese (Simplified) Localization Style Guide》与《Microsoft Writing Style Guide》撰写和审校简体中文技术文档，并可用 ASD-STE100 简明技术英语约束英文技术写作。
+按阮一峰《中文技术文档的写作规范》、微软《Chinese (Simplified) Localization Style Guide》与《Microsoft Writing Style Guide》撰写和审校简体中文技术文档，并可用 ASD-STE100 简明技术英语约束英文技术写作。技能以 Less is More（最小化写作）为核心思想，按语法、风格、结构组织；README 与发行说明作为有顺序约束的特殊文档类型处理。
 
 ## 什么时候用
 
@@ -10,7 +10,7 @@
 
 | 文件 | 用途 |
 |---|---|
-| `SKILL.md` | 主规范：触发描述、硬性规则、冲突裁决、审校流程 |
+| `SKILL.md` | 主规范：通用写作思想、语法、风格、结构、特殊文档类型、冲突裁决与审校流程 |
 | `references/quick-check.md` | 正误对照自检清单 |
 | `references/asd-ste100-core.md` | ASD-STE100 核心规则提炼 |
 | `references/sources/` | 三份规范原文备份（其中两份为 git submodule，可选） |
