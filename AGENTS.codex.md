@@ -43,7 +43,12 @@
 - Follow project conventions. Choose names that express domain meaning; use one term per concept.
 - Prefer explicit types and interfaces. Do not hide known data structures behind dynamic attribute access or broad types.
 - Remove unnecessary work before simplifying, optimizing, or automating. Leave sound code alone.
-- Split functions, modules, and classes by real responsibilities. Reuse existing mechanisms; avoid speculative abstractions, compatibility layers, and options.
+- Keep logic in one function unless reuse or a real named concept requires the split. Reuse existing mechanisms; avoid speculative abstractions, compatibility layers, and options.
+- Validate unknown input once at the boundary that owns it. Pass typed values inward instead of repeating `typeof` or property-existence checks; do not revalidate what a schema, constructor, or internal type already guarantees.
+- Do not extract a single-use helper preemptively. Inline at the call site unless the helper is reused, hides a genuinely complex boundary, or names a real concept that clarifies the caller.
+- Never add complexity for a speculative race, security, or robustness edge case without stating the concrete failure mode, its likelihood, and the complexity it costs, then getting the user's agreement. Do not expand scope silently.
+- Inline values used once. Prefer fewer variables, ternaries, and early returns over reassignment.
+- Avoid `try`/`catch` unless this location must handle the error.
 - Match behavior to interface names and caller expectations. Report failures clearly; let callers with business context choose fallbacks.
 - Do not add production parameters or branches solely for tests. Test useful behavior at a maintenance cost proportionate to defect risk.
 - Express intent through names and structure. Reserve comments for necessary constraints and reasons; avoid narration, decorative dividers, and change history.
@@ -63,6 +68,7 @@
 - Prove completion with the real artifact: run the flow, read the actual value, inspect the diff. Build success, self-report, and mock logs are not evidence.
 - Explain where a measured number comes from and what limits it before drawing a conclusion.
 - Test behavior users can observe. Keep maintenance cost proportional to defect risk; do not mirror implementation details.
+- Before delivery, check the diff against these five: a single-use helper, a value validated twice, a branch for a state nothing produces, an unnecessary `try`/`catch`, and a change the user did not request.
 - Run the required checks. Do not weaken hooks, assertions, type checks, or tests to pass. Report a skipped check with its reason, never as passed.
 - Pure documentation edits need no unrelated code tests.
 
@@ -82,4 +88,5 @@
 ## Instruction Maintenance
 
 - When updating instructions, remove stale or duplicate guidance before adding rules. Keep project-specific details local.
+- Give each project its own root AGENTS.md for commands, known failure modes, validation entry points, and architectural invariants. Keep those facts out of global preferences.
 - Scope new rules to the demonstrated problem. Preserve intentional boundaries and avoid universal procedures for isolated failures.
